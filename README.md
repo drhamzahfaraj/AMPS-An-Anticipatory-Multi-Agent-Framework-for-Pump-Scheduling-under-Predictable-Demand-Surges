@@ -173,17 +173,6 @@ download via `water-benchmark-hub`.
 
 ---
 
-## A note on EnergyPlus
-
-EnergyPlus is a building energy / HVAC simulation tool; it does not model water
-distribution hydraulics. This study uses EPANET 2.2 (via WNTR), the
-domain-appropriate engine, so there are no EnergyPlus results to include.
-EnergyPlus would be relevant only to a separate HVAC study; it appears in
-unrelated prior work the authors consulted for rigor patterns, not for water
-modelling.
-
----
-
 ## License
 MIT — see `LICENSE`.
 
