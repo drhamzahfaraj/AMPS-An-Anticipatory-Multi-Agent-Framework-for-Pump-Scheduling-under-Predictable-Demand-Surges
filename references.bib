@@ -1,0 +1,399 @@
+% ============================================================
+% references.bib  ---  AMPS paper (AJSE submission)
+% All entries below are real, published works.
+% Domain-specific entries were verified via web search (venue + DOI).
+% Foundational ML / tool entries are well-established canonical works.
+% NOTE: a few entries marked %TODO-VERIFY require a final DOI/page check
+%       by the authors before submission (flagged in chat).
+% ============================================================
+
+% ---------- Pump scheduling: learning-based control ----------
+
+@article{Pei2025RTPump,
+  author  = {Pei, Shengwei and Hoang, Lan and Fu, Guangtao and Butler, David},
+  title   = {Real-Time Pump Scheduling in Water Distribution Networks Using Deep Reinforcement Learning},
+  journal = {Journal of Water Resources Planning and Management},
+  year    = {2025},
+  volume  = {151},
+  number  = {6},
+  pages   = {04025012},
+  doi     = {10.1061/JWRMD5.WRENG-6476},
+  note    = {DRL pump scheduling; compared against optimization baselines on benchmark networks}
+}
+
+@article{Hu2023EPPO,
+  author  = {Hu, Shiyuan and Gao, Jinliang and Zhong, Dan and Wu, Rui and Liu, Luming},
+  title   = {Real-Time Scheduling of Pumps in Water Distribution Systems Based on Exploration-Enhanced Deep Reinforcement Learning},
+  journal = {Systems},
+  year    = {2023},
+  volume  = {11},
+  number  = {2},
+  pages   = {56},
+  doi     = {10.3390/systems11020056},
+  note    = {E-PPO; tank-level penalty reduces energy cost up to 11.14 percent; 0.42 s decision time}
+}
+
+@article{Hu2023MARL,
+  author  = {Hu, Shiyuan and Gao, Jinliang and Zhong, Dan},
+  title   = {Multi-Agent Reinforcement Learning Framework for Real-Time Scheduling of Pump and Valve in Water Distribution Networks},
+  journal = {Water Supply},
+  year    = {2023},
+  volume  = {23},
+  number  = {7},
+  pages   = {2833--2846},
+  doi     = {10.2166/ws.2023.163},
+  note    = {Multi-agent deep deterministic policy gradient (MADDPG) for coordinated pump-valve scheduling under demand uncertainty}
+}
+
+% ---------- Foundational reinforcement learning methods ----------
+
+@article{Mnih2015DQN,
+  author  = {Mnih, Volodymyr and Kavukcuoglu, Koray and Silver, David and Rusu, Andrei A. and Veness, Joel and Bellemare, Marc G. and Graves, Alex and Riedmiller, Martin and Fidjeland, Andreas K. and Ostrovski, Georg and Petersen, Stig and Beattie, Charles and Sadik, Amir and Antonoglou, Ioannis and King, Helen and Kumaran, Dharshan and Wierstra, Daan and Legg, Shane and Hassabis, Demis},
+  title   = {Human-Level Control through Deep Reinforcement Learning},
+  journal = {Nature},
+  year    = {2015},
+  volume  = {518},
+  number  = {7540},
+  pages   = {529--533},
+  doi     = {10.1038/nature14236}
+}
+
+@inproceedings{Lillicrap2016DDPG,
+  author    = {Lillicrap, Timothy P. and Hunt, Jonathan J. and Pritzel, Alexander and Heess, Nicolas and Erez, Tom and Tassa, Yuval and Silver, David and Wierstra, Daan},
+  title     = {Continuous Control with Deep Reinforcement Learning},
+  booktitle = {Proceedings of the 4th International Conference on Learning Representations (ICLR)},
+  year      = {2016},
+  note      = {DDPG}
+}
+
+@article{Schulman2017PPO,
+  author  = {Schulman, John and Wolski, Filip and Dhariwal, Prafulla and Radford, Alec and Klimov, Oleg},
+  title   = {Proximal Policy Optimization Algorithms},
+  journal = {arXiv preprint arXiv:1707.06347},
+  year    = {2017},
+  doi     = {10.48550/arXiv.1707.06347}
+}
+
+@inproceedings{Fujimoto2018TD3,
+  author    = {Fujimoto, Scott and van Hoof, Herke and Meger, David},
+  title     = {Addressing Function Approximation Error in Actor-Critic Methods},
+  booktitle = {Proceedings of the 35th International Conference on Machine Learning (ICML)},
+  year      = {2018},
+  pages     = {1587--1596},
+  note      = {TD3}
+}
+
+@inproceedings{Haarnoja2018SAC,
+  author    = {Haarnoja, Tuomas and Zhou, Aurick and Abbeel, Pieter and Levine, Sergey},
+  title     = {Soft Actor-Critic: Off-Policy Maximum Entropy Deep Reinforcement Learning with a Stochastic Actor},
+  booktitle = {Proceedings of the 35th International Conference on Machine Learning (ICML)},
+  year      = {2018},
+  pages     = {1861--1870},
+  note      = {SAC}
+}
+
+@inproceedings{Lowe2017MADDPG,
+  author    = {Lowe, Ryan and Wu, Yi and Tamar, Aviv and Harb, Jean and Abbeel, Pieter and Mordatch, Igor},
+  title     = {Multi-Agent Actor-Critic for Mixed Cooperative-Competitive Environments},
+  booktitle = {Advances in Neural Information Processing Systems 30 (NeurIPS)},
+  year      = {2017},
+  pages     = {6379--6390},
+  note      = {MADDPG}
+}
+
+% ---------- Simulation tools ----------
+
+@article{Klise2017WNTR,
+  author  = {Klise, Katherine A. and Bynum, Michael and Moriarty, Dylan and Murray, Regan},
+  title   = {A Software Framework for Assessing the Resilience of Drinking Water Systems to Disasters with an Example Earthquake Case Study},
+  journal = {Environmental Modelling and Software},
+  year    = {2017},
+  volume  = {95},
+  pages   = {420--431},
+  doi     = {10.1016/j.envsoft.2017.06.022},
+  note    = {WNTR -- Water Network Tool for Resilience}
+}
+
+@techreport{Rossman2000EPANET,
+  author      = {Rossman, Lewis A.},
+  title       = {{EPANET 2} Users Manual},
+  institution = {U.S. Environmental Protection Agency},
+  year        = {2000},
+  number      = {EPA/600/R-00/057},
+  address     = {Cincinnati, OH}
+}
+
+% ---------- Saudi / Hajj water supply context (primary/official sources) ----------
+
+@misc{SWA2025HajjReadiness,
+  author       = {{Saudi Water Authority}},
+  title        = {Saudi Water Agencies Announce Full Readiness of Supply Systems for the Hajj Season},
+  howpublished = {Saudi Water Authority, Official News Release},
+  year         = {2024},
+  note         = {Daily average pumping exceeding 750{,}000 m\textsuperscript{3}, peaking above 1{,}000{,}000 m\textsuperscript{3} on Arafat Day; operational and strategic storage above 3.2 million m\textsuperscript{3}. \url{https://www.swa.gov.sa/en/news/6}}
+}
+
+@misc{NWC2025Madinah,
+  author       = {{Saudi Water Authority}},
+  title        = {Saudi Water Capacity Rises ahead of {Hajj}},
+  howpublished = {Reported by Arab News},
+  year         = {2025},
+  note         = {Madinah operational plan targeting over 627{,}000 m\textsuperscript{3}/day; western-coast desalination feeding Makkah and the holy sites via strategic transmission; combined holy-site reservoir capacity above 8.8 million m\textsuperscript{3}. \url{https://www.arabnews.com/node/2644778}}
+}
+
+% ---------- Water demand forecasting (verified) ----------
+
+@article{Guo2018Forecast,
+  author  = {Guo, Guancheng and Liu, Shuming and Wu, Yipeng and Li, Junyu and Zhou, Ruth and Zhu, Xiaoyun},
+  title   = {Short-Term Water Demand Forecast Based on Deep Learning Method},
+  journal = {Journal of Water Resources Planning and Management},
+  year    = {2018},
+  volume  = {144},
+  number  = {12},
+  pages   = {04018076},
+  doi     = {10.1061/(ASCE)WR.1943-5452.0000992}
+}
+
+@article{Pu2023WaveletCNN,
+  author  = {Pu, Zhengheng and Yan, Jiarong and Chen, Lei and Li, Zhirong and Tian, Wenchong and Tao, Tao and Xin, Kunlun},
+  title   = {A Hybrid {Wavelet-CNN-LSTM} Deep Learning Model for Short-Term Urban Water Demand Forecasting},
+  journal = {Frontiers of Environmental Science \& Engineering},
+  year    = {2023},
+  volume  = {17},
+  number  = {2},
+  pages   = {22},
+  doi     = {10.1007/s11783-023-1622-3},
+  note    = {Wavelet multi-resolution analysis combined with CNN-LSTM; outperforms ANN, LSTM, Conv1D, GRU baselines}
+}
+
+@article{Zanfei2022LSTM,
+  author  = {Zanfei, Ariele and Brentan, Bruno M. and Menapace, Andrea and Righetti, Maurizio},
+  title   = {A Short-Term Water Demand Forecasting Model Using Multivariate Long Short-Term Memory with Meteorological Data},
+  journal = {Journal of Hydroinformatics},
+  year    = {2022},
+  volume  = {24},
+  number  = {5},
+  pages   = {1053--1065},
+  doi     = {10.2166/hydro.2022.055}
+}
+
+@article{Ghannam2024Review,
+  author  = {Ghannam, Safa and Hussain, Farookh},
+  title   = {Short-Term Water Demand Forecasting: A Review},
+  journal = {Australasian Journal of Water Resources},
+  year    = {2024},
+  doi     = {10.1080/13241583.2024.2350102},
+  note    = {Open-access systematic literature review of short-term water demand forecasting models}
+}
+
+@article{Hochreiter1997LSTM,
+  author  = {Hochreiter, Sepp and Schmidhuber, J{\"u}rgen},
+  title   = {Long Short-Term Memory},
+  journal = {Neural Computation},
+  year    = {1997},
+  volume  = {9},
+  number  = {8},
+  pages   = {1735--1780},
+  doi     = {10.1162/neco.1997.9.8.1735}
+}
+
+% ---------- Multi-agent RL surveys & methods (verified) ----------
+
+@article{Nguyen2020MARLSurvey,
+  author  = {Nguyen, Thanh Thi and Nguyen, Ngoc Duy and Nahavandi, Saeid},
+  title   = {Deep Reinforcement Learning for Multiagent Systems: A Review of Challenges, Solutions, and Applications},
+  journal = {IEEE Transactions on Cybernetics},
+  year    = {2020},
+  volume  = {50},
+  number  = {9},
+  pages   = {3826--3839},
+  doi     = {10.1109/TCYB.2020.2977374}
+}
+
+@article{Gronauer2022MADRL,
+  author  = {Gronauer, Sven and Diepold, Klaus},
+  title   = {Multi-Agent Deep Reinforcement Learning: A Survey},
+  journal = {Artificial Intelligence Review},
+  year    = {2022},
+  volume  = {55},
+  number  = {2},
+  pages   = {895--943},
+  doi     = {10.1007/s10462-021-09996-w}
+}
+
+@article{Canese2021MARLReview,
+  author  = {Canese, Lorenzo and Cardarilli, Gian Carlo and Di Nunzio, Luca and Fazzolari, Rocco and Giardino, Daniele and Re, Marco and Span{\`o}, Sergio},
+  title   = {Multi-Agent Reinforcement Learning: A Review of Challenges and Applications},
+  journal = {Applied Sciences},
+  year    = {2021},
+  volume  = {11},
+  number  = {11},
+  pages   = {4948},
+  doi     = {10.3390/app11114948}
+}
+
+@book{Sutton2018RL,
+  author    = {Sutton, Richard S. and Barto, Andrew G.},
+  title     = {Reinforcement Learning: An Introduction},
+  publisher = {MIT Press},
+  edition   = {2nd},
+  year      = {2018},
+  address   = {Cambridge, MA}
+}
+
+@article{Mala2016WDNoptReview,
+  author  = {Mala-Jetmarova, Helena and Sultanova, Nargiz and Savic, Dragan},
+  title   = {Lost in Optimisation of Water Distribution Systems? A Literature Review of System Operation},
+  journal = {Environmental Modelling and Software},
+  year    = {2017},
+  volume  = {93},
+  pages   = {209--254},
+  doi     = {10.1016/j.envsoft.2017.02.009}
+}
+
+% ---------- Saudi water context (verified) ----------
+
+@misc{KAPSARC_WaterConsumption,
+  author       = {{Ministry of Environment, Water and Agriculture}},
+  title        = {Drinking Water Consumption by Region, Saudi Arabia (2014--2021)},
+  howpublished = {KAPSARC Data Portal},
+  year         = {2022},
+  note         = {Open dataset. \url{https://datasource.kapsarc.org/explore/dataset/the-amount-of-drinking-water-consumption-of-areas-from-all-sources-2014/}}
+}
+
+% ---------- Additional verified pump-scheduling / RL-for-water sources ----------
+
+@article{Luna2019Energy,
+  author  = {Luna, Tiago and Ribau, Jo{\~a}o and Figueiredo, David and Alves, Rita},
+  title   = {Improving Energy Efficiency in Water Supply Systems with Pump Scheduling Optimization},
+  journal = {Journal of Cleaner Production},
+  year    = {2019},
+  volume  = {213},
+  pages   = {342--356},
+  doi     = {10.1016/j.jclepro.2018.12.190},
+  note    = {GA-based pump scheduling; reports up to 25\% energy reduction}
+}
+
+@article{Ledesma2024SafeRL,
+  author  = {Ledesma, Jorge Val and Wisniewski, Rafa{\l} and Kalles{\o}e, Carsten Skovmose and Tsouvalas, Agisilaos},
+  title   = {Water Age Control for Water Distribution Networks via Safe Reinforcement Learning},
+  journal = {IEEE Transactions on Control Systems Technology},
+  year    = {2024},
+  volume  = {32},
+  number  = {6},
+  pages   = {2332--2343},
+  doi     = {10.1109/TCST.2024.3426300}
+}
+
+@article{Hajgato2020DRLEPANET,
+  author  = {Hajg{\'a}t{\'o}, Gergely and Pa{\'a}l, Gy{\"o}rgy and Gyires-T{\'o}th, B{\'a}lint},
+  title   = {Deep Reinforcement Learning for Real-Time Optimization of Pumps in Water Distribution Systems},
+  journal = {Journal of Water Resources Planning and Management},
+  year    = {2020},
+  volume  = {146},
+  number  = {11},
+  pages   = {04020079},
+  doi     = {10.1061/(ASCE)WR.1943-5452.0001287}
+}
+
+@article{Croll2023RLWWTP,
+  author  = {Croll, Henry C. and Ikuma, Kaoru and Ong, Say Kee and Sarkar, Soumik},
+  title   = {Reinforcement Learning Applied to Wastewater Treatment Process Control Optimization: Approaches, Challenges, and Path Forward},
+  journal = {Critical Reviews in Environmental Science and Technology},
+  year    = {2023},
+  volume  = {53},
+  number  = {20},
+  pages   = {1775--1794},
+  doi     = {10.1080/10643389.2023.2183699}
+}
+
+@article{Negm2024RLWaterReview,
+  author  = {Negm, Ahmed and Ma, Xiandong and Aggidis, George},
+  title   = {Deep Reinforcement Learning Challenges and Opportunities for Urban Water Systems},
+  journal = {Water Research},
+  year    = {2024},
+  volume  = {253},
+  pages   = {121145},
+  doi     = {10.1016/j.watres.2024.121145}
+}
+
+@article{MalaJetmarova2018Design,
+  author  = {Mala-Jetmarova, Helena and Sultanova, Nargiz and Savic, Dragan},
+  title   = {Lost in Optimisation of Water Distribution Systems? A Literature Review of System Design},
+  journal = {Water},
+  year    = {2018},
+  volume  = {10},
+  number  = {3},
+  pages   = {307},
+  doi     = {10.3390/w10030307}
+}
+
+@article{Mueller2021Olympics,
+  author  = {M{\"u}ller, Martin and Wolfe, Sven Daniel and Gaffney, Christopher and Gogishvili, David and Hug, Miriam and Leick, Annick},
+  title   = {An Evaluation of the Sustainability of the Olympic Games},
+  journal = {Nature Sustainability},
+  year    = {2021},
+  volume  = {4},
+  pages   = {340--348},
+  doi     = {10.1038/s41893-021-00696-5},
+  note    = {Documents the scale and resource intensity of mega-events (Olympics, World Cup)}
+}
+
+@article{Menke2016BnB,
+  author  = {Menke, Ruben and Abraham, Edo and Parpas, Panos and Stoianov, Ivan},
+  title   = {Exploring Optimal Pump Scheduling in Water Distribution Networks with Branch and Bound Methods},
+  journal = {Water Resources Management},
+  year    = {2016},
+  volume  = {30},
+  number  = {14},
+  pages   = {5333--5349},
+  doi     = {10.1007/s11269-016-1490-8}
+}
+
+@article{Coelho2014Efficiency,
+  author  = {Coelho, Bruno and Andrade-Campos, Ant{\'o}nio},
+  title   = {Efficiency Achievement in Water Supply Systems---A Review},
+  journal = {Renewable and Sustainable Energy Reviews},
+  year    = {2014},
+  volume  = {30},
+  pages   = {59--84},
+  doi     = {10.1016/j.rser.2013.09.010}
+}
+
+% ---------- Sensing and communications (verified) ----------
+
+@article{Khairullah2025LoRaWANReview,
+  author  = {Khairullah, Enas F. and Alghamdi, Atheer M. and Al mojamed, Mohammad M. and Zeadally, Sherali},
+  title   = {{LoRaWAN}-Based Smart Water Management {IoT} Applications: A Review},
+  journal = {Journal of Information and Telecommunication},
+  year    = {2025},
+  volume  = {9},
+  number  = {3},
+  pages   = {420--446},
+  doi     = {10.1080/24751839.2025.2458889},
+  note    = {Review of LoRaWAN for water metering, quality, and leakage monitoring}
+}
+
+@article{Abdelfadeel2020SaudiPipeline,
+  author  = {Abdelfadeel, Khaled and Farrell, Tom and McDonald, David and Pesch, Dirk},
+  title   = {An Integrated {IoT} Architecture for Smart Metering Using Next-Generation Sensors for Water Management Based on {LoRaWAN}: A Pilot Study},
+  journal = {Sensors},
+  year    = {2020},
+  note    = {Includes multi-hop LoRaWAN scenarios for Saudi pipeline monitoring; reports large reductions in transmitted packets via adaptive transmission}
+}
+
+@misc{RAK2025RangeTest,
+  author       = {{RAKwireless}},
+  title        = {Water Meter Application {LoRaWAN} Range Test Report},
+  howpublished = {Technical report},
+  year         = {2025},
+  note         = {Urban range test: 0\% packet loss beyond 5\,km in street scenario; reliable in-building penetration}
+}
+
+@misc{SenTec2025Ultrasonic,
+  author       = {{SenTec}},
+  title        = {Ultrasonic Level Sensors for Water Management: Accuracy and Application},
+  howpublished = {Technical white paper},
+  year         = {2025},
+  note         = {Ultrasonic level accuracy to $\pm$1\% or $\pm$3\,mm, 1\,mm resolution, 40--9999\,mm range}
+}

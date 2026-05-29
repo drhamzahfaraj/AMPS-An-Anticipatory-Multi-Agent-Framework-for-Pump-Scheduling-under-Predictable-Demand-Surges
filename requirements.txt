@@ -1,0 +1,6 @@
+# AMPS reproducibility requirements (Python 3.12)
+wntr>=1.4.0
+numpy>=1.26
+networkx>=3.0
+matplotlib>=3.8
+water-benchmark-hub
