@@ -47,8 +47,6 @@ public benchmarks with a validated hydraulic environment (mass conservation to
    hydraulic coupling, not fixed; it grows sublinearly with network size.
 3. **Transferable trigger-level formulation** — feasible-by-construction policy
    search that generalizes across networks where binary-schedule GA does not.
-4. **Honest, commensurable benchmarking** — single validated environment, held
-   service level, no fabricated numbers, full reproducibility.
 
 ---
 
