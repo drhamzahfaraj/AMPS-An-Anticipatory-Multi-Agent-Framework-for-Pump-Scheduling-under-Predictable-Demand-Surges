@@ -1,7 +1,6 @@
 # AMPS: An Anticipatory Multi-Agent Framework for Pump Scheduling under Predictable Demand Surges
 
-Reproducible code, data, and results for the AMPS manuscript (submitted to the
-Arabian Journal for Science and Engineering).
+Reproducible code, data, and results for the AMPS manuscript.
 
 ---
 
