@@ -76,7 +76,6 @@ search is offline.
 ```
 amps/
   README.md                 # this file
-  REVIEW.md                 # two-stage peer-review record (self + 5 reviewers)
   LICENSE                   # MIT
   requirements.txt
   main.tex, references.bib  # manuscript source
