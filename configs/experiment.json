@@ -1,0 +1,15 @@
+{
+  "environment": {
+    "solver": "EPANET 2.2 (PDA)",
+    "minimum_pressure_m": 14.0,
+    "required_pressure_m": 21.0,
+    "horizon_hours": 24,
+    "timestep_hours": 1
+  },
+  "physical": {"pump_efficiency": 0.75, "water_density": 1000.0, "gravity": 9.81},
+  "economic": {"tariff_sar_per_kwh": 0.20, "sar_per_usd": 3.75, "tariff_type": "flat"},
+  "surge": {"multiplier": 1.33, "source": "Saudi Water Authority avg->peak ratio"},
+  "decomposition": {"coupling_threshold_hops": 20, "agent_count": "derived"},
+  "networks": ["ky10", "Net3", "Net6", "C-Town", "D-Town", "Richmond"],
+  "training": {"seeds": [0, 1], "note": "demonstration-grade; 5 seeds for final"}
+}
