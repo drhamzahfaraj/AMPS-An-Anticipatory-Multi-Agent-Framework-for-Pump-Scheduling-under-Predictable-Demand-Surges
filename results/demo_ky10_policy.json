@@ -1,0 +1,37 @@
+{
+  "policy": [
+    {
+      "pump": "~@Pump-13",
+      "agent": 0,
+      "tank": "T-1",
+      "low_threshold_m": 39.861,
+      "high_threshold_m": 43.823,
+      "condition": "normal"
+    },
+    {
+      "pump": "~@Pump-9",
+      "agent": 1,
+      "tank": "T-4",
+      "low_threshold_m": 24.265,
+      "high_threshold_m": 25.789,
+      "condition": "normal"
+    },
+    {
+      "pump": "~@Pump-8",
+      "agent": 2,
+      "tank": "T-13",
+      "low_threshold_m": 23.007,
+      "high_threshold_m": 27.579,
+      "condition": "normal"
+    }
+  ],
+  "summary": {
+    "label": "demo_ky10",
+    "energy_kwh_day": 3830.89990234375,
+    "cost_sar_day": 766.18,
+    "cost_usd_day": 204.31,
+    "demand_satisfaction_pct": 99.6,
+    "neg_pressure_frac_pct": 0.48,
+    "pump_switches": 5
+  }
+}

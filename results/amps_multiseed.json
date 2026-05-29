@@ -1,0 +1,38 @@
+{
+  "runs": [
+    {
+      "seed": 0,
+      "normal_energy": 3680.60009765625,
+      "normal_sat": 99.47,
+      "surge_energy": 5037.0,
+      "surge_sat": 99.25,
+      "wall_s": 17.0
+    },
+    {
+      "seed": 1,
+      "normal_energy": 3945.699951171875,
+      "normal_sat": 99.46,
+      "surge_energy": 4981.2001953125,
+      "surge_sat": 99.22,
+      "wall_s": 17.0
+    }
+  ],
+  "mean_std": {
+    "normal_energy": [
+      3813.1,
+      132.5
+    ],
+    "normal_sat": [
+      99.5,
+      0.0
+    ],
+    "surge_energy": [
+      5009.1,
+      27.9
+    ],
+    "surge_sat": [
+      99.2,
+      0.0
+    ]
+  }
+}

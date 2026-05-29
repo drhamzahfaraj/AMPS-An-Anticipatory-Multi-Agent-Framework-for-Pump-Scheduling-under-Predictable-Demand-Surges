@@ -1,0 +1,12 @@
+{
+  "network": "C-Town",
+  "condition": "normal",
+  "baseline_energy_kwh": 4024.699951171875,
+  "reference_optimizer_energy_kwh": 3351.89990234375,
+  "reference_type": "best of centralized/multi-agent trigger-opt",
+  "learned_amps_energy_kwh": 3813.1,
+  "learned_amps_std": 132.5,
+  "optimality_gap_pct": 13.76,
+  "learned_saving_vs_baseline_pct": 5.26,
+  "optimizer_saving_vs_baseline_pct": 16.72
+}

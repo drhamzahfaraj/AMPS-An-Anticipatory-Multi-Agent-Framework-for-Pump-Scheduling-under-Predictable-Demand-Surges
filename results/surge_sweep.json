@@ -1,0 +1,32 @@
+[
+  {
+    "multiplier": 1.0,
+    "event_type": "normal",
+    "energy_kwh": 4025.0,
+    "demand_sat_pct": 99.46
+  },
+  {
+    "multiplier": 1.2,
+    "event_type": "tourist-season peak",
+    "energy_kwh": 4903.0,
+    "demand_sat_pct": 99.41
+  },
+  {
+    "multiplier": 1.33,
+    "event_type": "Hajj/Umrah pilgrimage",
+    "energy_kwh": 5289.0,
+    "demand_sat_pct": 99.19
+  },
+  {
+    "multiplier": 1.5,
+    "event_type": "major sporting event",
+    "energy_kwh": 5361.0,
+    "demand_sat_pct": 96.2
+  },
+  {
+    "multiplier": 2.0,
+    "event_type": "extreme concentrated event",
+    "energy_kwh": 5602.0,
+    "demand_sat_pct": 83.19
+  }
+]

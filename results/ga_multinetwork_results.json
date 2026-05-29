@@ -1,0 +1,26 @@
+{
+  "C-Town": {
+    "network": "C-Town (BWN)",
+    "pumps": 11,
+    "baseline_energy_kwh": 2618.5,
+    "baseline_sat_pct": 72.51,
+    "ga_energy_kwh": 2122.4,
+    "ga_cost_sar": 424.47,
+    "ga_cost_usd": 113.19,
+    "ga_sat_pct": 72.49,
+    "energy_saving_pct": 18.95,
+    "seed": 0
+  },
+  "D-Town": {
+    "network": "D-Town (BWN-II)",
+    "pumps": 11,
+    "baseline_energy_kwh": 1000000000.0,
+    "baseline_sat_pct": 0.0,
+    "ga_energy_kwh": 3579.1,
+    "ga_cost_sar": 715.83,
+    "ga_cost_usd": 190.89,
+    "ga_sat_pct": 68.97,
+    "energy_saving_pct": 100.0,
+    "seed": 0
+  }
+}

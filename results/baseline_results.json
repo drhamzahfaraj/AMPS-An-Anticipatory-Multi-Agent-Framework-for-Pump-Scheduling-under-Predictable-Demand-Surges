@@ -1,0 +1,34 @@
+{
+  "normal": {
+    "label": "Rule-based / NORMAL",
+    "energy_kwh_day": 3830.89990234375,
+    "cost_sar_day": 766.18,
+    "cost_usd_day": 204.31,
+    "demand_satisfaction_pct": 99.6,
+    "neg_pressure_frac_pct": 0.48,
+    "pump_switches": 5
+  },
+  "surge": {
+    "label": "Rule-based / SURGE",
+    "energy_kwh_day": 3975.199951171875,
+    "cost_sar_day": 795.04,
+    "cost_usd_day": 212.01,
+    "demand_satisfaction_pct": 94.34,
+    "neg_pressure_frac_pct": 0.79,
+    "pump_switches": 3
+  },
+  "validation": {
+    "mass_conservation_relative_error": {
+      "normal": {
+        "eps_mean_pct": 0.000245,
+        "eps_max_pct": 0.004494
+      },
+      "surge": {
+        "eps_mean_pct": 0.000423,
+        "eps_max_pct": 0.007917
+      },
+      "method": "global nodal continuity residual / junction throughput, EPANET 2.2 PDA",
+      "interpretation": "~1e-4% => mass conserved to numerical round-off; environment validated"
+    }
+  }
+}

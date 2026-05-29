@@ -1,0 +1,20 @@
+{
+  "centralized": {
+    "mode": "centralized",
+    "n_agents": 1,
+    "cost_sar": 760.21,
+    "energy_kwh": 3801.10009765625,
+    "demand_sat_pct": 99.6,
+    "seed": 0,
+    "wall_s": 19.1
+  },
+  "multi_agent": {
+    "mode": "multi_agent",
+    "n_agents": 3,
+    "cost_sar": 757.23,
+    "energy_kwh": 3786.10009765625,
+    "demand_sat_pct": 99.65,
+    "seed": 0,
+    "wall_s": 57.3
+  }
+}

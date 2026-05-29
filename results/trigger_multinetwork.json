@@ -1,0 +1,106 @@
+{
+  "C-Town": {
+    "baseline_energy": 4024.699951171875,
+    "baseline_sat": 99.46,
+    "n_controllable": 9,
+    "n_agents": 5,
+    "centralized": {
+      "mode": "centralized",
+      "n_agents": 1,
+      "cost_sar": 692.06,
+      "energy_kwh": 3460.300048828125,
+      "demand_sat_pct": 99.38,
+      "seed": 0,
+      "saving_pct": 14.020000457763672,
+      "wall_s": 3.4
+    },
+    "multi_agent": {
+      "mode": "multi_agent",
+      "n_agents": 9,
+      "cost_sar": 670.37,
+      "energy_kwh": 3351.89990234375,
+      "demand_sat_pct": 99.56,
+      "seed": 0,
+      "saving_pct": 16.719999313354492,
+      "wall_s": 30.7
+    }
+  },
+  "D-Town": {
+    "baseline_energy": 6330.2998046875,
+    "baseline_sat": 98.88,
+    "n_controllable": 11,
+    "n_agents": 5,
+    "centralized": {
+      "mode": "centralized",
+      "n_agents": 1,
+      "cost_sar": 1174.21,
+      "energy_kwh": 5871.0,
+      "demand_sat_pct": 99.12,
+      "seed": 0,
+      "saving_pct": 7.260000228881836,
+      "wall_s": 4.2
+    },
+    "multi_agent": {
+      "mode": "multi_agent",
+      "n_agents": 11,
+      "cost_sar": 1156.1,
+      "energy_kwh": 5780.5,
+      "demand_sat_pct": 98.97,
+      "seed": 0,
+      "saving_pct": 8.6899995803833,
+      "wall_s": 43.5
+    }
+  },
+  "ky10": {
+    "baseline_energy": 3830.89990234375,
+    "baseline_sat": 99.6,
+    "n_controllable": 3,
+    "n_agents": 3,
+    "centralized": {
+      "mode": "centralized",
+      "n_agents": 1,
+      "cost_sar": 760.21,
+      "energy_kwh": 3801.10009765625,
+      "demand_sat_pct": 99.6,
+      "seed": 0,
+      "saving_pct": 0.7799999713897705,
+      "wall_s": 9.9
+    },
+    "multi_agent": {
+      "mode": "multi_agent",
+      "n_agents": 3,
+      "cost_sar": 757.23,
+      "energy_kwh": 3786.10009765625,
+      "demand_sat_pct": 99.61,
+      "seed": 0,
+      "saving_pct": 1.1699999570846558,
+      "wall_s": 29.9
+    }
+  },
+  "Net3": {
+    "baseline_energy": 3347.300048828125,
+    "baseline_sat": 100.0,
+    "n_controllable": 1,
+    "n_agents": 1,
+    "centralized": {
+      "mode": "centralized",
+      "n_agents": 1,
+      "cost_sar": 483.92,
+      "energy_kwh": 2419.60009765625,
+      "demand_sat_pct": 99.99,
+      "seed": 0,
+      "saving_pct": 27.709999084472656,
+      "wall_s": 1.0
+    },
+    "multi_agent": {
+      "mode": "multi_agent",
+      "n_agents": 1,
+      "cost_sar": 483.92,
+      "energy_kwh": 2419.60009765625,
+      "demand_sat_pct": 99.99,
+      "seed": 0,
+      "saving_pct": 27.709999084472656,
+      "wall_s": 1.0
+    }
+  }
+}

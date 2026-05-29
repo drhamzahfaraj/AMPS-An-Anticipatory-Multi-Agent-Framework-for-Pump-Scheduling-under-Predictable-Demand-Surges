@@ -1,0 +1,26 @@
+[
+  {
+    "pumps": 50,
+    "controllable": 50,
+    "n_agents": 1,
+    "solve_s": 0.019,
+    "decomp_s": 0.009,
+    "note": "synthetic; computational scaling only"
+  },
+  {
+    "pumps": 100,
+    "controllable": 100,
+    "n_agents": 1,
+    "solve_s": 0.024,
+    "decomp_s": 0.026,
+    "note": "synthetic; computational scaling only"
+  },
+  {
+    "pumps": 200,
+    "controllable": 200,
+    "n_agents": 1,
+    "solve_s": 0.04,
+    "decomp_s": 0.09,
+    "note": "synthetic; computational scaling only"
+  }
+]

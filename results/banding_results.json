@@ -1,0 +1,23 @@
+{
+  "controllable_pumps": 60,
+  "bands": {
+    "3": {
+      "n_bands": 3,
+      "opt_dimension": 6,
+      "full_dimension": 120,
+      "dim_reduction_pct": 95.0
+    },
+    "6": {
+      "n_bands": 6,
+      "opt_dimension": 12,
+      "full_dimension": 120,
+      "dim_reduction_pct": 90.0
+    },
+    "12": {
+      "n_bands": 12,
+      "opt_dimension": 24,
+      "full_dimension": 120,
+      "dim_reduction_pct": 80.0
+    }
+  }
+}

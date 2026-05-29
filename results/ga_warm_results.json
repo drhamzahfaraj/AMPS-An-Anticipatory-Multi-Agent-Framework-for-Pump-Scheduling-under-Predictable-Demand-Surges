@@ -1,0 +1,30 @@
+{
+  "normal": [
+    {
+      "cost_sar": 688.17,
+      "cost_usd": 183.51,
+      "energy_kwh": 3440.800048828125,
+      "demand_satisfaction_pct": 99.57
+    },
+    {
+      "cost_sar": 740.91,
+      "cost_usd": 197.58,
+      "energy_kwh": 3704.5,
+      "demand_satisfaction_pct": 99.58
+    }
+  ],
+  "surge": [
+    {
+      "cost_sar": 747.28,
+      "cost_usd": 199.27,
+      "energy_kwh": 3736.39990234375,
+      "demand_satisfaction_pct": 93.56
+    },
+    {
+      "cost_sar": 774.14,
+      "cost_usd": 206.44,
+      "energy_kwh": 3870.699951171875,
+      "demand_satisfaction_pct": 92.69
+    }
+  ]
+}

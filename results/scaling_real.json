@@ -1,0 +1,52 @@
+[
+  {
+    "network": "Net3",
+    "pumps": 2,
+    "tanks": 3,
+    "junctions": 92,
+    "controllable": 1,
+    "n_agents": 1,
+    "solve_s": 0.118,
+    "decomp_s": 0.0
+  },
+  {
+    "network": "C-Town",
+    "pumps": 11,
+    "tanks": 7,
+    "junctions": 388,
+    "controllable": 9,
+    "n_agents": 5,
+    "solve_s": 0.076,
+    "decomp_s": 0.016
+  },
+  {
+    "network": "D-Town",
+    "pumps": 11,
+    "tanks": 7,
+    "junctions": 399,
+    "controllable": 11,
+    "n_agents": 5,
+    "solve_s": 0.107,
+    "decomp_s": 0.02
+  },
+  {
+    "network": "ky10",
+    "pumps": 13,
+    "tanks": 13,
+    "junctions": 920,
+    "controllable": 3,
+    "n_agents": 3,
+    "solve_s": 0.311,
+    "decomp_s": 0.017
+  },
+  {
+    "network": "Net6",
+    "pumps": 61,
+    "tanks": 32,
+    "junctions": 3323,
+    "controllable": 60,
+    "n_agents": 12,
+    "solve_s": 1.362,
+    "decomp_s": 1.057
+  }
+]

@@ -1,0 +1,12 @@
+{
+  "normal": {
+    "runs": [
+      {
+        "cost_sar": 601.8,
+        "cost_usd": 160.48,
+        "energy_kwh": 3009.0,
+        "demand_satisfaction_pct": 96.01
+      }
+    ]
+  }
+}

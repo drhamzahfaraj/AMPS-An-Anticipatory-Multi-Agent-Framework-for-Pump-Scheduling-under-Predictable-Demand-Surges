@@ -1,0 +1,85 @@
+{
+  "policy": [
+    {
+      "pump": "PU1",
+      "agent": 0,
+      "tank": "T1",
+      "low_threshold_m": 5.436,
+      "high_threshold_m": 6.895,
+      "condition": "surge"
+    },
+    {
+      "pump": "PU2",
+      "agent": 0,
+      "tank": "T1",
+      "low_threshold_m": 1.637,
+      "high_threshold_m": 4.424,
+      "condition": "surge"
+    },
+    {
+      "pump": "PU4",
+      "agent": 1,
+      "tank": "T3",
+      "low_threshold_m": 1.99,
+      "high_threshold_m": 5.077,
+      "condition": "surge"
+    },
+    {
+      "pump": "PU5",
+      "agent": 1,
+      "tank": "T3",
+      "low_threshold_m": 2.749,
+      "high_threshold_m": 2.962,
+      "condition": "surge"
+    },
+    {
+      "pump": "PU6",
+      "agent": 2,
+      "tank": "T4",
+      "low_threshold_m": 1.998,
+      "high_threshold_m": 3.461,
+      "condition": "surge"
+    },
+    {
+      "pump": "PU7",
+      "agent": 2,
+      "tank": "T4",
+      "low_threshold_m": 3.243,
+      "high_threshold_m": 5.545,
+      "condition": "surge"
+    },
+    {
+      "pump": "PU8",
+      "agent": 3,
+      "tank": "T5",
+      "low_threshold_m": 2.103,
+      "high_threshold_m": 4.368,
+      "condition": "surge"
+    },
+    {
+      "pump": "PU10",
+      "agent": 4,
+      "tank": "T7",
+      "low_threshold_m": 2.537,
+      "high_threshold_m": 4.223,
+      "condition": "surge"
+    },
+    {
+      "pump": "PU11",
+      "agent": 4,
+      "tank": "T7",
+      "low_threshold_m": -0.221,
+      "high_threshold_m": 2.556,
+      "condition": "surge"
+    }
+  ],
+  "summary": {
+    "label": "ctown_surge_example",
+    "energy_kwh_day": 5064.2998046875,
+    "cost_sar_day": 1012.86,
+    "cost_usd_day": 270.1,
+    "demand_satisfaction_pct": 99.25,
+    "neg_pressure_frac_pct": 0.0,
+    "pump_switches": 17
+  }
+}

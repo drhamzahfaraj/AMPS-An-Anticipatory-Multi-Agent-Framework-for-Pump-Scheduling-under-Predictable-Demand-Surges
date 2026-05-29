@@ -1,0 +1,59 @@
+[
+  {
+    "network": "C-Town (BWN)",
+    "pumps": 11,
+    "tanks": 7,
+    "energy_kwh": 4024.7,
+    "cost_sar": 804.94,
+    "cost_usd": 214.65,
+    "demand_sat_pct": 99.46,
+    "mass_eps_pct": 2.6e-05
+  },
+  {
+    "network": "D-Town (BWN-II)",
+    "pumps": 11,
+    "tanks": 7,
+    "energy_kwh": 6300.5,
+    "cost_sar": 1260.1,
+    "cost_usd": 336.03,
+    "demand_sat_pct": 98.88,
+    "mass_eps_pct": 2.2e-05
+  },
+  {
+    "network": "ky10 (USA)",
+    "pumps": 13,
+    "tanks": 13,
+    "energy_kwh": 3830.9,
+    "cost_sar": 766.18,
+    "cost_usd": 204.31,
+    "demand_sat_pct": 99.6,
+    "mass_eps_pct": 0.000245
+  },
+  {
+    "network": "Net3 (USA)",
+    "pumps": 2,
+    "tanks": 3,
+    "energy_kwh": 3347.3,
+    "cost_sar": 669.46,
+    "cost_usd": 178.52,
+    "demand_sat_pct": 100.0,
+    "mass_eps_pct": 1.5e-05
+  },
+  {
+    "network": "Net6 (large)",
+    "pumps": 61,
+    "tanks": 32,
+    "energy_kwh": 44961.7,
+    "cost_sar": 8992.34,
+    "cost_usd": 2397.96,
+    "demand_sat_pct": 98.94,
+    "mass_eps_pct": 3.2e-05
+  },
+  {
+    "network": "Richmond (UK)",
+    "pumps": 7,
+    "tanks": 6,
+    "energy_kwh": 0.0,
+    "note": "WNTR solver (DD)"
+  }
+]

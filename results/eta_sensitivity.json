@@ -1,0 +1,14 @@
+{
+  "eta_0.65": {
+    "energy_kwh": 4643.89990234375,
+    "demand_sat_pct": 99.46
+  },
+  "eta_0.75": {
+    "energy_kwh": 4024.699951171875,
+    "demand_sat_pct": 99.46
+  },
+  "eta_0.85": {
+    "energy_kwh": 3551.199951171875,
+    "demand_sat_pct": 99.46
+  }
+}

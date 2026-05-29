@@ -1,0 +1,37 @@
+{
+  "ctown_three_way": {
+    "normal": {
+      "rule_based": {
+        "energy": 4025,
+        "sat": 99.46,
+        "cost_sar": 805
+      },
+      "static_opt": {
+        "energy": 3460,
+        "sat": 99.38
+      },
+      "learned_amps": {
+        "energy": 3681,
+        "sat": 99.47,
+        "cost_sar": 736
+      }
+    },
+    "surge": {
+      "rule_based": {
+        "energy": 5289,
+        "sat": 99.19,
+        "cost_sar": 1058
+      },
+      "learned_amps": {
+        "energy": 5037,
+        "sat": 99.25,
+        "cost_sar": 1007
+      }
+    }
+  },
+  "findings": {
+    "normal": "learned AMPS: -8.5% energy at equal/slightly better service",
+    "surge": "learned AMPS: -4.8% energy AND +0.06pt service vs baseline (anticipatory payoff)",
+    "caveat": "demonstration-grade: 10-iter single-seed training; full multi-seed budget pending"
+  }
+}

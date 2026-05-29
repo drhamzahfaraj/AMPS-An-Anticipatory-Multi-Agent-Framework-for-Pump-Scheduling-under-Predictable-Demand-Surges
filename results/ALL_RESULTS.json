@@ -1,0 +1,712 @@
+{
+  "amps_ctown": {
+    "theta": [
+      0.6208614227473321,
+      4.815509727238603,
+      0.23294017426047287,
+      6.661580444554104,
+      0.9276089510208142,
+      0.7097981164848337,
+      0.1497886572215525,
+      4.273788955129034,
+      -0.025961344346081425,
+      2.015922781596694,
+      0.15358922200507516,
+      4.923178523863187,
+      0.6002749988911298,
+      2.148791275333245,
+      0.47793358031921646,
+      2.484535043585937,
+      -0.3351165892129136,
+      2.333508201572482,
+      -0.5162563586964486,
+      3.9776862394563506,
+      0.1809291282827445,
+      3.062534208959248,
+      0.9203988083051703,
+      4.624994335726663,
+      0.36341299129399246,
+      1.7398164138265535,
+      -0.36419540927979205,
+      4.732135157046189,
+      -0.5122113592572668,
+      3.0495867696026826,
+      -0.3659585688157724,
+      4.589431991981549,
+      -0.7463747063685225,
+      0.5252124975735021,
+      0.3247575406273705,
+      2.230859979868057
+    ],
+    "n_agents": 5,
+    "records": {
+      "normal": {
+        "cost_sar": 736.12,
+        "energy_kwh": 3680.60009765625,
+        "demand_sat_pct": 99.47
+      },
+      "surge": {
+        "cost_sar": 1007.4,
+        "energy_kwh": 5037.0,
+        "demand_sat_pct": 99.25
+      }
+    },
+    "train_history": [
+      1862.7,
+      1862.7,
+      1862.7,
+      1818.8,
+      1780.0,
+      1743.5,
+      1743.5,
+      1743.5,
+      1743.5,
+      1743.5,
+      1743.5
+    ],
+    "seed": 0
+  },
+  "amps_learned_results": {
+    "ctown_three_way": {
+      "normal": {
+        "rule_based": {
+          "energy": 4025,
+          "sat": 99.46,
+          "cost_sar": 805
+        },
+        "static_opt": {
+          "energy": 3460,
+          "sat": 99.38
+        },
+        "learned_amps": {
+          "energy": 3681,
+          "sat": 99.47,
+          "cost_sar": 736
+        }
+      },
+      "surge": {
+        "rule_based": {
+          "energy": 5289,
+          "sat": 99.19,
+          "cost_sar": 1058
+        },
+        "learned_amps": {
+          "energy": 5037,
+          "sat": 99.25,
+          "cost_sar": 1007
+        }
+      }
+    },
+    "findings": {
+      "normal": "learned AMPS: -8.5% energy at equal/slightly better service",
+      "surge": "learned AMPS: -4.8% energy AND +0.06pt service vs baseline (anticipatory payoff)",
+      "caveat": "demonstration-grade: 10-iter single-seed training; full multi-seed budget pending"
+    }
+  },
+  "amps_multiseed": {
+    "runs": [
+      {
+        "seed": 0,
+        "normal_energy": 3680.60009765625,
+        "normal_sat": 99.47,
+        "surge_energy": 5037.0,
+        "surge_sat": 99.25,
+        "wall_s": 17.0
+      },
+      {
+        "seed": 1,
+        "normal_energy": 3945.699951171875,
+        "normal_sat": 99.46,
+        "surge_energy": 4981.2001953125,
+        "surge_sat": 99.22,
+        "wall_s": 17.0
+      }
+    ],
+    "mean_std": {
+      "normal_energy": [
+        3813.1,
+        132.5
+      ],
+      "normal_sat": [
+        99.5,
+        0.0
+      ],
+      "surge_energy": [
+        5009.1,
+        27.9
+      ],
+      "surge_sat": [
+        99.2,
+        0.0
+      ]
+    }
+  },
+  "banding_results": {
+    "controllable_pumps": 60,
+    "bands": {
+      "3": {
+        "n_bands": 3,
+        "opt_dimension": 6,
+        "full_dimension": 120,
+        "dim_reduction_pct": 95.0
+      },
+      "6": {
+        "n_bands": 6,
+        "opt_dimension": 12,
+        "full_dimension": 120,
+        "dim_reduction_pct": 90.0
+      },
+      "12": {
+        "n_bands": 12,
+        "opt_dimension": 24,
+        "full_dimension": 120,
+        "dim_reduction_pct": 80.0
+      }
+    }
+  },
+  "baseline_results": {
+    "normal": {
+      "label": "Rule-based / NORMAL",
+      "energy_kwh_day": 3830.89990234375,
+      "cost_sar_day": 766.18,
+      "cost_usd_day": 204.31,
+      "demand_satisfaction_pct": 99.6,
+      "neg_pressure_frac_pct": 0.48,
+      "pump_switches": 5
+    },
+    "surge": {
+      "label": "Rule-based / SURGE",
+      "energy_kwh_day": 3975.199951171875,
+      "cost_sar_day": 795.04,
+      "cost_usd_day": 212.01,
+      "demand_satisfaction_pct": 94.34,
+      "neg_pressure_frac_pct": 0.79,
+      "pump_switches": 3
+    },
+    "validation": {
+      "mass_conservation_relative_error": {
+        "normal": {
+          "eps_mean_pct": 0.000245,
+          "eps_max_pct": 0.004494
+        },
+        "surge": {
+          "eps_mean_pct": 0.000423,
+          "eps_max_pct": 0.007917
+        },
+        "method": "global nodal continuity residual / junction throughput, EPANET 2.2 PDA",
+        "interpretation": "~1e-4% => mass conserved to numerical round-off; environment validated"
+      }
+    }
+  },
+  "ctown_surge_example_policy": {
+    "policy": [
+      {
+        "pump": "PU1",
+        "agent": 0,
+        "tank": "T1",
+        "low_threshold_m": 5.436,
+        "high_threshold_m": 6.895,
+        "condition": "surge"
+      },
+      {
+        "pump": "PU2",
+        "agent": 0,
+        "tank": "T1",
+        "low_threshold_m": 1.637,
+        "high_threshold_m": 4.424,
+        "condition": "surge"
+      },
+      {
+        "pump": "PU4",
+        "agent": 1,
+        "tank": "T3",
+        "low_threshold_m": 1.99,
+        "high_threshold_m": 5.077,
+        "condition": "surge"
+      },
+      {
+        "pump": "PU5",
+        "agent": 1,
+        "tank": "T3",
+        "low_threshold_m": 2.749,
+        "high_threshold_m": 2.962,
+        "condition": "surge"
+      },
+      {
+        "pump": "PU6",
+        "agent": 2,
+        "tank": "T4",
+        "low_threshold_m": 1.998,
+        "high_threshold_m": 3.461,
+        "condition": "surge"
+      },
+      {
+        "pump": "PU7",
+        "agent": 2,
+        "tank": "T4",
+        "low_threshold_m": 3.243,
+        "high_threshold_m": 5.545,
+        "condition": "surge"
+      },
+      {
+        "pump": "PU8",
+        "agent": 3,
+        "tank": "T5",
+        "low_threshold_m": 2.103,
+        "high_threshold_m": 4.368,
+        "condition": "surge"
+      },
+      {
+        "pump": "PU10",
+        "agent": 4,
+        "tank": "T7",
+        "low_threshold_m": 2.537,
+        "high_threshold_m": 4.223,
+        "condition": "surge"
+      },
+      {
+        "pump": "PU11",
+        "agent": 4,
+        "tank": "T7",
+        "low_threshold_m": -0.221,
+        "high_threshold_m": 2.556,
+        "condition": "surge"
+      }
+    ],
+    "summary": {
+      "label": "ctown_surge_example",
+      "energy_kwh_day": 5064.2998046875,
+      "cost_sar_day": 1012.86,
+      "cost_usd_day": 270.1,
+      "demand_satisfaction_pct": 99.25,
+      "neg_pressure_frac_pct": 0.0,
+      "pump_switches": 17
+    }
+  },
+  "demo_ky10_policy": {
+    "policy": [
+      {
+        "pump": "~@Pump-13",
+        "agent": 0,
+        "tank": "T-1",
+        "low_threshold_m": 39.861,
+        "high_threshold_m": 43.823,
+        "condition": "normal"
+      },
+      {
+        "pump": "~@Pump-9",
+        "agent": 1,
+        "tank": "T-4",
+        "low_threshold_m": 24.265,
+        "high_threshold_m": 25.789,
+        "condition": "normal"
+      },
+      {
+        "pump": "~@Pump-8",
+        "agent": 2,
+        "tank": "T-13",
+        "low_threshold_m": 23.007,
+        "high_threshold_m": 27.579,
+        "condition": "normal"
+      }
+    ],
+    "summary": {
+      "label": "demo_ky10",
+      "energy_kwh_day": 3830.89990234375,
+      "cost_sar_day": 766.18,
+      "cost_usd_day": 204.31,
+      "demand_satisfaction_pct": 99.6,
+      "neg_pressure_frac_pct": 0.48,
+      "pump_switches": 5
+    }
+  },
+  "eta_sensitivity": {
+    "eta_0.65": {
+      "energy_kwh": 4643.89990234375,
+      "demand_sat_pct": 99.46
+    },
+    "eta_0.75": {
+      "energy_kwh": 4024.699951171875,
+      "demand_sat_pct": 99.46
+    },
+    "eta_0.85": {
+      "energy_kwh": 3551.199951171875,
+      "demand_sat_pct": 99.46
+    }
+  },
+  "ga_multinetwork_results": {
+    "C-Town": {
+      "network": "C-Town (BWN)",
+      "pumps": 11,
+      "baseline_energy_kwh": 2618.5,
+      "baseline_sat_pct": 72.51,
+      "ga_energy_kwh": 2122.4,
+      "ga_cost_sar": 424.47,
+      "ga_cost_usd": 113.19,
+      "ga_sat_pct": 72.49,
+      "energy_saving_pct": 18.95,
+      "seed": 0
+    },
+    "D-Town": {
+      "network": "D-Town (BWN-II)",
+      "pumps": 11,
+      "baseline_energy_kwh": 1000000000.0,
+      "baseline_sat_pct": 0.0,
+      "ga_energy_kwh": 3579.1,
+      "ga_cost_sar": 715.83,
+      "ga_cost_usd": 190.89,
+      "ga_sat_pct": 68.97,
+      "energy_saving_pct": 100.0,
+      "seed": 0
+    }
+  },
+  "ga_results": {
+    "normal": {
+      "runs": [
+        {
+          "cost_sar": 601.8,
+          "cost_usd": 160.48,
+          "energy_kwh": 3009.0,
+          "demand_satisfaction_pct": 96.01
+        }
+      ]
+    }
+  },
+  "ga_warm_results": {
+    "normal": [
+      {
+        "cost_sar": 688.17,
+        "cost_usd": 183.51,
+        "energy_kwh": 3440.800048828125,
+        "demand_satisfaction_pct": 99.57
+      },
+      {
+        "cost_sar": 740.91,
+        "cost_usd": 197.58,
+        "energy_kwh": 3704.5,
+        "demand_satisfaction_pct": 99.58
+      }
+    ],
+    "surge": [
+      {
+        "cost_sar": 747.28,
+        "cost_usd": 199.27,
+        "energy_kwh": 3736.39990234375,
+        "demand_satisfaction_pct": 93.56
+      },
+      {
+        "cost_sar": 774.14,
+        "cost_usd": 206.44,
+        "energy_kwh": 3870.699951171875,
+        "demand_satisfaction_pct": 92.69
+      }
+    ]
+  },
+  "multinetwork_baseline": [
+    {
+      "network": "C-Town (BWN)",
+      "pumps": 11,
+      "tanks": 7,
+      "energy_kwh": 4024.7,
+      "cost_sar": 804.94,
+      "cost_usd": 214.65,
+      "demand_sat_pct": 99.46,
+      "mass_eps_pct": 2.6e-05
+    },
+    {
+      "network": "D-Town (BWN-II)",
+      "pumps": 11,
+      "tanks": 7,
+      "energy_kwh": 6300.5,
+      "cost_sar": 1260.1,
+      "cost_usd": 336.03,
+      "demand_sat_pct": 98.88,
+      "mass_eps_pct": 2.2e-05
+    },
+    {
+      "network": "ky10 (USA)",
+      "pumps": 13,
+      "tanks": 13,
+      "energy_kwh": 3830.9,
+      "cost_sar": 766.18,
+      "cost_usd": 204.31,
+      "demand_sat_pct": 99.6,
+      "mass_eps_pct": 0.000245
+    },
+    {
+      "network": "Net3 (USA)",
+      "pumps": 2,
+      "tanks": 3,
+      "energy_kwh": 3347.3,
+      "cost_sar": 669.46,
+      "cost_usd": 178.52,
+      "demand_sat_pct": 100.0,
+      "mass_eps_pct": 1.5e-05
+    },
+    {
+      "network": "Net6 (large)",
+      "pumps": 61,
+      "tanks": 32,
+      "energy_kwh": 44961.7,
+      "cost_sar": 8992.34,
+      "cost_usd": 2397.96,
+      "demand_sat_pct": 98.94,
+      "mass_eps_pct": 3.2e-05
+    },
+    {
+      "network": "Richmond (UK)",
+      "pumps": 7,
+      "tanks": 6,
+      "energy_kwh": 0.0,
+      "note": "WNTR solver (DD)"
+    }
+  ],
+  "optimality_gap": {
+    "network": "C-Town",
+    "condition": "normal",
+    "baseline_energy_kwh": 4024.699951171875,
+    "reference_optimizer_energy_kwh": 3351.89990234375,
+    "reference_type": "best of centralized/multi-agent trigger-opt",
+    "learned_amps_energy_kwh": 3813.1,
+    "learned_amps_std": 132.5,
+    "optimality_gap_pct": 13.76,
+    "learned_saving_vs_baseline_pct": 5.26,
+    "optimizer_saving_vs_baseline_pct": 16.72
+  },
+  "scaling_real": [
+    {
+      "network": "Net3",
+      "pumps": 2,
+      "tanks": 3,
+      "junctions": 92,
+      "controllable": 1,
+      "n_agents": 1,
+      "solve_s": 0.118,
+      "decomp_s": 0.0
+    },
+    {
+      "network": "C-Town",
+      "pumps": 11,
+      "tanks": 7,
+      "junctions": 388,
+      "controllable": 9,
+      "n_agents": 5,
+      "solve_s": 0.076,
+      "decomp_s": 0.016
+    },
+    {
+      "network": "D-Town",
+      "pumps": 11,
+      "tanks": 7,
+      "junctions": 399,
+      "controllable": 11,
+      "n_agents": 5,
+      "solve_s": 0.107,
+      "decomp_s": 0.02
+    },
+    {
+      "network": "ky10",
+      "pumps": 13,
+      "tanks": 13,
+      "junctions": 920,
+      "controllable": 3,
+      "n_agents": 3,
+      "solve_s": 0.311,
+      "decomp_s": 0.017
+    },
+    {
+      "network": "Net6",
+      "pumps": 61,
+      "tanks": 32,
+      "junctions": 3323,
+      "controllable": 60,
+      "n_agents": 12,
+      "solve_s": 1.362,
+      "decomp_s": 1.057
+    }
+  ],
+  "scaling_synthetic": [
+    {
+      "pumps": 50,
+      "controllable": 50,
+      "n_agents": 1,
+      "solve_s": 0.019,
+      "decomp_s": 0.009,
+      "note": "synthetic; computational scaling only"
+    },
+    {
+      "pumps": 100,
+      "controllable": 100,
+      "n_agents": 1,
+      "solve_s": 0.024,
+      "decomp_s": 0.026,
+      "note": "synthetic; computational scaling only"
+    },
+    {
+      "pumps": 200,
+      "controllable": 200,
+      "n_agents": 1,
+      "solve_s": 0.04,
+      "decomp_s": 0.09,
+      "note": "synthetic; computational scaling only"
+    }
+  ],
+  "surge_sweep": [
+    {
+      "multiplier": 1.0,
+      "event_type": "normal",
+      "energy_kwh": 4025.0,
+      "demand_sat_pct": 99.46
+    },
+    {
+      "multiplier": 1.2,
+      "event_type": "tourist-season peak",
+      "energy_kwh": 4903.0,
+      "demand_sat_pct": 99.41
+    },
+    {
+      "multiplier": 1.33,
+      "event_type": "Hajj/Umrah pilgrimage",
+      "energy_kwh": 5289.0,
+      "demand_sat_pct": 99.19
+    },
+    {
+      "multiplier": 1.5,
+      "event_type": "major sporting event",
+      "energy_kwh": 5361.0,
+      "demand_sat_pct": 96.2
+    },
+    {
+      "multiplier": 2.0,
+      "event_type": "extreme concentrated event",
+      "energy_kwh": 5602.0,
+      "demand_sat_pct": 83.19
+    }
+  ],
+  "trigger_centralized_vs_ma": {
+    "centralized": {
+      "mode": "centralized",
+      "n_agents": 1,
+      "cost_sar": 760.21,
+      "energy_kwh": 3801.10009765625,
+      "demand_sat_pct": 99.6,
+      "seed": 0,
+      "wall_s": 19.1
+    },
+    "multi_agent": {
+      "mode": "multi_agent",
+      "n_agents": 3,
+      "cost_sar": 757.23,
+      "energy_kwh": 3786.10009765625,
+      "demand_sat_pct": 99.65,
+      "seed": 0,
+      "wall_s": 57.3
+    }
+  },
+  "trigger_multinetwork": {
+    "C-Town": {
+      "baseline_energy": 4024.699951171875,
+      "baseline_sat": 99.46,
+      "n_controllable": 9,
+      "n_agents": 5,
+      "centralized": {
+        "mode": "centralized",
+        "n_agents": 1,
+        "cost_sar": 692.06,
+        "energy_kwh": 3460.300048828125,
+        "demand_sat_pct": 99.38,
+        "seed": 0,
+        "saving_pct": 14.020000457763672,
+        "wall_s": 3.4
+      },
+      "multi_agent": {
+        "mode": "multi_agent",
+        "n_agents": 9,
+        "cost_sar": 670.37,
+        "energy_kwh": 3351.89990234375,
+        "demand_sat_pct": 99.56,
+        "seed": 0,
+        "saving_pct": 16.719999313354492,
+        "wall_s": 30.7
+      }
+    },
+    "D-Town": {
+      "baseline_energy": 6330.2998046875,
+      "baseline_sat": 98.88,
+      "n_controllable": 11,
+      "n_agents": 5,
+      "centralized": {
+        "mode": "centralized",
+        "n_agents": 1,
+        "cost_sar": 1174.21,
+        "energy_kwh": 5871.0,
+        "demand_sat_pct": 99.12,
+        "seed": 0,
+        "saving_pct": 7.260000228881836,
+        "wall_s": 4.2
+      },
+      "multi_agent": {
+        "mode": "multi_agent",
+        "n_agents": 11,
+        "cost_sar": 1156.1,
+        "energy_kwh": 5780.5,
+        "demand_sat_pct": 98.97,
+        "seed": 0,
+        "saving_pct": 8.6899995803833,
+        "wall_s": 43.5
+      }
+    },
+    "ky10": {
+      "baseline_energy": 3830.89990234375,
+      "baseline_sat": 99.6,
+      "n_controllable": 3,
+      "n_agents": 3,
+      "centralized": {
+        "mode": "centralized",
+        "n_agents": 1,
+        "cost_sar": 760.21,
+        "energy_kwh": 3801.10009765625,
+        "demand_sat_pct": 99.6,
+        "seed": 0,
+        "saving_pct": 0.7799999713897705,
+        "wall_s": 9.9
+      },
+      "multi_agent": {
+        "mode": "multi_agent",
+        "n_agents": 3,
+        "cost_sar": 757.23,
+        "energy_kwh": 3786.10009765625,
+        "demand_sat_pct": 99.61,
+        "seed": 0,
+        "saving_pct": 1.1699999570846558,
+        "wall_s": 29.9
+      }
+    },
+    "Net3": {
+      "baseline_energy": 3347.300048828125,
+      "baseline_sat": 100.0,
+      "n_controllable": 1,
+      "n_agents": 1,
+      "centralized": {
+        "mode": "centralized",
+        "n_agents": 1,
+        "cost_sar": 483.92,
+        "energy_kwh": 2419.60009765625,
+        "demand_sat_pct": 99.99,
+        "seed": 0,
+        "saving_pct": 27.709999084472656,
+        "wall_s": 1.0
+      },
+      "multi_agent": {
+        "mode": "multi_agent",
+        "n_agents": 1,
+        "cost_sar": 483.92,
+        "energy_kwh": 2419.60009765625,
+        "demand_sat_pct": 99.99,
+        "seed": 0,
+        "saving_pct": 27.709999084472656,
+        "wall_s": 1.0
+      }
+    }
+  }
+}
